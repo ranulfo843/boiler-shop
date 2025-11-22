@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopNexa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>ShopNexa</h1>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <section class="search-box">
+      <input type="text" placeholder="Search products..." />
+      <button>Search</button>
+    </section>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="text">
+        <h2>Your Trusted Source for<br />Smart & Modern Electronics</h2>
+        <p>
+          Upgrade your everyday life with high-quality devices at unbeatable
+          prices. Fast, secure delivery straight to your door.
+        </p>
+        <button class="btn btn-primary">Shop Now</button>
+        <button class="btn btn-outline">Learn More</button>
+      </div>
+      <img
+        src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+        alt="Hero Image"
+      />
+    </section>
+
+    <!-- FEATURE ICONS -->
+    <section class="info-icons" id="features">
+      <div class="icon-box">
+        <span>⚡</span>
+        <p>Fast Delivery</p>
+      </div>
+      <div class="icon-box">
+        <span>💳</span>
+        <p>Secure Payments</p>
+      </div>
+      <div class="icon-box">
+        <span>⭐</span>
+        <p>Top Rated Quality</p>
+      </div>
+    </section>
+
+    <h2 class="section-title">Featured Products</h2>
+
+    <section class="products" id="products">
+      <!-- PRODUCT CARD -->
+      <div class="card">
+        <span class="badge">SALE</span>
+        <img
+          src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+          alt="Laptop Pro X"
+        />
+        <h3>Laptop Pro X</h3>
+        <div class="rating">⭐ ⭐ ⭐ ⭐ ☆</div>
+        <p>Powerful laptop with 16GB RAM & crystal display.</p>
+        <div class="price">$1299.99</div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <!-- You can repeat more existing products -->
+      <!-- Example extra improved card -->
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80"
+          alt="Electric Guitar"
+        />
+
+        <h3>Electric Guitar X</h3>
+        <div class="rating">⭐ ⭐ ⭐ ⭐ ⭐</div>
+        <p>Premium build, smooth tone, perfect for beginners and pros.</p>
+        <div class="price">$499.99</div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <!-- Repeat rest of your 6 cards -->
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <h2>Stay Updated</h2>
+      <p>Get exclusive deals & product updates.</p>
+      <input type="email" placeholder="Enter your email" />
+      <button class="button-class">Subscribe</button>
+    </section>
+
+    <!-- CART NOTIFICATION -->
+    <div class="cart-notify">✔ Added to Cart</div>
+
+    <footer class="footer" id="contact">
+      <div>
+        <h3>ShopNexa</h3>
+        <p>Your trusted store for premium gadgets.</p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#">Home</a><br />
+        <a href="#products">Products</a><br />
+        <a href="#features">Features</a><br />
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div>
+        <h3>Support</h3>
+        <a href="#">Help Center</a><br />
+        <a href="#">Order Status</a><br />
+        <a href="#">Returns</a>
+      </div>
+
+      <div>
+        <h3>Contact Us</h3>
+        <p>📍 Philippines</p>
+        <p>📞 +63 935 776 8835</p>
+        <p>📧 support@shopnexa.com</p>
+      </div>
+    </footer>
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-sidebar" id="cartSidebar">
+      <h2>Your Cart</h2>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong>Total: </strong><span id="cartTotal">$0.00</span>
+      </div>
+      <button class="checkout">Checkout</button>
+      <button class="close-cart">Close</button>
+    </div>
+
+    <!-- CART ICON BUTTON -->
+    <button class="open-cart">🛒 Cart (<span id="cartCount">0</span>)</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
